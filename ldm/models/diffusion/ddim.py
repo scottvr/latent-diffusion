@@ -117,6 +117,7 @@ class DDIMSampler(object):
                                                     log_every_t=log_every_t,
                                                     unconditional_guidance_scale=unconditional_guidance_scale,
                                                     unconditional_conditioning=unconditional_conditioning,
+                                                    cond_fn = cond_fn
                                                 )
         return samples, intermediates
 
